@@ -14,7 +14,7 @@ body {
 
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -24,30 +24,27 @@ a{
 /*-------Header Section------- */
 
 
-.container {
-    margin: auto;
-    width: 95%;
-    overflow: hidden;
-   
 
-
-}
 
 .big-bold {
     font-size: 7rem;
     z-index: 5;
-    margin-top: 2%;
     overflow: none;
+    animation: pop-in 2s ease-out forwards;
+    text-align: center;
+
 }
 
 .big-bold-2 {
     font-size: 8rem;
     z-index: 7;
-
+    animation: pop-in 3s ease-out forwards;
+    text-align: center;
 }
 
 .big-bold-md {
-    z-index: 10;
+    animation: pop-in 3s ease-out forwards;
+
 }
 
 
@@ -59,42 +56,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 150px;
-    margin-bottom: 100px;
-
-}
-
-.shape {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 30px;
-    background-color: none;
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    animation: pop-in 2s ease-out forwards;
 
 }
 
 
-.shapes-section {
-    display: flex;
-    margin: 30px 0;
-    position: absolute;
-    top: 70px;
-
-}
-
-.shape2 shape4 {
-    z-index: 2;
-
-}
-
-.shape3 {
-    z-index: 6;
-
-}
-
-.shape1 {
-    z-index: 8;
-}
 
 
 .btn {
@@ -103,14 +71,15 @@ header {
     border: black 2px solid;
     padding: 10px 20px;
     margin-right: 5px;
-    margin-top: 15px;
-    border-radius: 20px;
+    margin-top: 22px;
     cursor: pointer;
-    box-shadow: 5px 10px #8888;
     border: none;
     color: black;
     z-index: 9;
     background-color: #fff;
+    transform: translatey(0px);
+    animation: pop-in 4s ease-out forwards;
+    box-shadow: 0px 6px 8px #888888;
 
 }
 
@@ -204,7 +173,7 @@ header {
     margin: auto;
     color: #333;
     cursor: pointer;
-    
+
 
 
 
@@ -214,7 +183,7 @@ header {
     transform: translateY(-50px);
     box-shadow: 20px 20px #888888;
     transition: all 0.5s .2s ease-in-out;
-    
+
 }
 
 
@@ -270,6 +239,7 @@ header {
     height: 100vh;
     width: 100%;
     text-align: center;
+    position: relative;
 }
 
 
@@ -291,10 +261,9 @@ header {
     text-align: center;
     align-items: center;
     font-size: 23px;
-    position: relative;
-    top: -140vh;
-    transform: translateX(50%);
-    left: 94%;
+    position: absolute;
+    bottom: 100%;
+    left: 46.5%;
     padding: 10px;
     box-shadow: 5px 5px #8888;
 
@@ -337,7 +306,7 @@ header {
     align-items: center;
     text-align: center;
     justify-self: center;
-    
+
 }
 
 
@@ -347,7 +316,7 @@ header {
 .section-d {
     width: 100%;
     height: 60vh;
-    background-color: #f5f7fa ;
+    background-color: #f5f7fa;
     justify-content: center;
     margin: auto;
     padding-top: 5%;
@@ -363,6 +332,7 @@ header {
     margin: auto;
     cursor: pointer;
 
+
 }
 
 .ui-card {
@@ -371,27 +341,43 @@ header {
     background-color: #fff;
     border-radius: 30px;
     padding-top: 10%;
-     box-shadow: 10px 5px 10px 5px #8888;
+    box-shadow: 10px 5px 10px 5px #8888;
+    overflow: hidden;
+
 
 }
 
-.fa-html5{
+
+.ui-card:hover > .img-container img {
+    opacity: 0.6;
+    transition: opacity 1s ease;
+}
+
+.ui-card:hover > #second i {
+    opacity: 1;
+    transition: opacity 1.5s ease;
+
+}
+
+
+.fa-html5 {
     color: #f26524;
+
 }
 
-.fa-css3-alt{
+.fa-css3-alt {
     color: #1890CF;
 }
 
-.fa-js-square{
+.fa-js-square {
     color: #F1BF26;
 }
 
-.fa-react{
+.fa-react {
     color: #15AABF;
 }
 
-.fa-gem{
+.fa-gem {
     color: #D91303;
 }
 
@@ -402,40 +388,38 @@ header {
 }
 
 #second {
-    color: #637081;
-    margin-top: 0.3em;
+
+    margin-top: 0.4em;
+
 }
 
-#second-p {
-    color: #637081;
+#second i {
+    opacity: 0.6;
+
 }
 
 .img-container {
-    background-color: #ffcfdf;
+
     height: 76%;
     width: 90%;
     margin: 20px auto 0 auto;
     overflow: hidden;
     border-radius: 40px;
     position: relative;
-     box-shadow: 0px 20px 0px -3px #888888;
+
 
 }
 
-.bottom-section {
-    width: 100%;
-    margin: auto;
-    background-color: #fff;
-    height: 16%;
-    box-shadow: 0 10px 8px #8888;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    position: relative;
-    bottom: 45px;
-    left: 0;
-    padding-top: 3%;
+
+.img-container img {
+    width: 120%;
+    height: 100%;
+
+
 
 }
+
+
 
 .bottom-section p {
     margin-left: 6%;
@@ -443,21 +427,22 @@ header {
 }
 
 
+
 /*-------Section e------- */
 
-.section-e{
+.section-e {
     width: 100%;
     height: 80vh;
-   background-color: #fbb034;
+    background-color: #fbb034;
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     padding: 1rem;
 }
 
 
-.large-circle{
-  width: 190px;
-  height: 190px;
- border-radius: 50%;
+.large-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
     background-color: #fff;
     overflow: hidden;
     display: flex;
@@ -479,7 +464,7 @@ header {
 }
 
 
-.text-section{
+.text-section {
     width: 90%;
     align-content: center;
     margin: auto;
@@ -487,7 +472,7 @@ header {
 }
 
 
-.icon-container{
+.icon-container {
     display: flex;
     margin: 10px auto;
     justify-content: space-around;
@@ -495,7 +480,7 @@ header {
 }
 
 
-.icon-circle{
+.icon-circle {
     background-color: #fff;
     width: 70px;
     height: 70px;
@@ -507,15 +492,16 @@ header {
     justify-content: center;
     text-align: center;
     align-content: center;
-    
+    animation: float 12s ease-in-out infinite;
+
 }
 
 
-.icon-circle i{
+.icon-circle i {
     font-size: 30px;
 }
 
-.icon-circle i:hover{
+.icon-circle i:hover {
     font-size: 34px;
 }
 
@@ -543,9 +529,9 @@ header {
     /*----Mobile Section-header---- */
 
     .container {
-        background-color: #fbb034;
+
         border-radius: 15px;
-        
+
     }
 
     .big-bold {
@@ -556,7 +542,7 @@ header {
     }
 
     .big-bold-2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         text-align: center;
         margin-bottom: 20px;
 
@@ -570,29 +556,19 @@ header {
     header {
         width: 100%;
         overflow: hidden;
-        height: 60vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-top: 30px;
+
         margin-bottom: 50px;
-        background-color: #ffdd00;
+
         justify-content: center;
 
 
     }
 
 
-
-
-    .shape {
-        display: none;
-    }
-
-
-    .btn {
-        display: none;
-    }
 
     /*----Mobile Section-a---- */
 
@@ -614,6 +590,10 @@ header {
 
     }
 
+    .btn {
+        font-size: 1rem;
+    }
+
 
     /*---Mobile--Section B------- */
 
@@ -621,6 +601,7 @@ header {
     .section-b {
         padding: 1.5rem;
         height: 100%;
+        margin-bottom: 10px;
     }
 
 
@@ -688,7 +669,7 @@ header {
     }
 
     /*----Mobile---Section c------- */
-    .section-c{
+    .section-c {
         height: 75vh;
     }
 
@@ -708,7 +689,7 @@ header {
         position: relative;
         top: -120vh;
         transform: translateX(50%);
-        left: 90%;
+        left: 89%;
         padding: 10px;
         box-shadow: 5px 5px #8888;
 
@@ -759,25 +740,25 @@ header {
         justify-self: center;
     }
 
-  /*----Mobile---Section d------- */
-    
-    
+    /*----Mobile---Section d------- */
+
+
     .section-d {
         display: none;
     }
-    
-   /*----Mobile---Section e------- */
-    
-    
-    
-    
-    
-    
-.icon-container{
-    width: 90%;
-}
-    
-    
+
+    /*----Mobile---Section e------- */
+
+
+
+
+
+
+    .icon-container {
+        width: 90%;
+    }
+
+
 
 }
 
@@ -799,46 +780,51 @@ header {
 
 /*-------CSS Animations------- */
 
-
-
-
- /* ----------------------------------------
- * animation shadow-drop-2-center
+/* ----------------------------------------
+ * animation Pop in
  * ----------------------------------------
  */
 
- .shadow-drop-2-center {
-	-webkit-animation: shadow-drop-2-center 3s ease-in-out infinite alternate both;
-	        animation: shadow-drop-2-center 3s ease-in-out infinite alternate both;
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.7);
+        border-radius: 80px;
+        box-shadow: 3px 3px 3px #ccc;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+        border-radius: 0px;
+
+
+    }
 }
-@-webkit-keyframes shadow-drop-2-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
+
+/* ----------------------------------------
+ * animation Bounce
+ * ----------------------------------------
+ */
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-5px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
 }
-@keyframes shadow-drop-2-center {
-  0% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translateZ(50px);
-            transform: translateZ(50px);
-    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-  }
-}
+
 
 
 
@@ -847,82 +833,9 @@ header {
 /*-------Grow Card------- */
 
 
-.grow:hover
-{
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-        transition: all 0.2s 0.5s ease-in-out ;
-}
-
-
-
-
-/*-------CSS Color Change------- */
-
-.shape-shift {
-    animation: colorchange 8s;
-    /* animation-name followed by duration in seconds*/
-    /* you could also use milliseconds (ms) or something like 2.5s */
-    -webkit-animation: colorchange 8s;
-    /* Chrome and Safari */
-}
-
-@keyframes colorchange {
-    0% {
-        background-color: #fad0c4;
-        background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
-
-    }
-
-    25% {
-        background-color: #f39f86;
-        background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
-    }
-
-    50% {
-        background-color: #5de6de;
-        background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
-    }
-
-    75% {
-        background-color: #7ee8fa;
-        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-    }
-
-    100% {
-        background-color: #ff4e00;
-        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-    }
-}
-
-@-webkit-keyframes colorchange
-
-/* Safari and Chrome - necessary duplicate */
-    {
-    0% {
-        background-color: #fad0c4;
-        background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
-    }
-
-    25% {
-        background-color: #f39f86;
-        background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
-    }
-
-    50% {
-        background-color: #5de6de;
-        background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
-    }
-
-    75% {
-        background-color: #7ee8fa;
-        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-        ;
-    }
-
-    100% {
-        background-color: #ff4e00;
-        background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
-    }
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s 0.1s ease-in-out;
 }
