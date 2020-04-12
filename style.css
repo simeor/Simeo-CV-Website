@@ -84,6 +84,13 @@ header {
 }
 
 
+.btn:hover {
+    background-color: #020201;
+    color: white;
+    transition: all 2s ease-in;
+}
+
+
 /*-------Section A------- */
 
 
@@ -100,10 +107,6 @@ header {
 
 .section-a p {
     z-index: 8;
-
-
-
-
 }
 
 
@@ -174,10 +177,8 @@ header {
     color: #333;
     cursor: pointer;
 
-
-
-
 }
+
 
 .card:hover > .white-circle {
     transform: translateY(-50px);
@@ -262,10 +263,12 @@ header {
     align-items: center;
     font-size: 23px;
     position: absolute;
-    bottom: 100%;
-    left: 46.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 105vh;
     padding: 10px;
-    box-shadow: 5px 5px #8888;
 
 }
 
@@ -311,7 +314,7 @@ header {
 
 
 
-/*-------Section d------- */
+/*-------Section D------- */
 
 .section-d {
     width: 100%;
@@ -319,7 +322,10 @@ header {
     background-color: #f5f7fa;
     justify-content: center;
     margin: auto;
-    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
 
 }
@@ -414,9 +420,6 @@ header {
 .img-container img {
     width: 120%;
     height: 100%;
-
-
-
 }
 
 
@@ -436,6 +439,10 @@ header {
     background-color: #fbb034;
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -447,7 +454,6 @@ header {
     overflow: hidden;
     display: flex;
     margin: auto;
-    margin-top: 20px;
     margin-bottom: 15px;
 
 }
@@ -465,7 +471,7 @@ header {
 
 
 .text-section {
-    width: 90%;
+    width: 70%;
     align-content: center;
     margin: auto;
     text-align: center;
@@ -474,9 +480,11 @@ header {
 
 .icon-container {
     display: flex;
+    align-content: center;
     margin: 10px auto;
-    justify-content: space-around;
-    width: 40%;
+    justify-content: space-between;
+    width: 50%;
+
 }
 
 
@@ -492,7 +500,7 @@ header {
     justify-content: center;
     text-align: center;
     align-content: center;
-    animation: float 12s ease-in-out infinite;
+
 
 }
 
@@ -503,6 +511,36 @@ header {
 
 .icon-circle i:hover {
     font-size: 34px;
+}
+
+
+
+
+
+/*-------Section f------- */
+
+
+
+.section-f {
+    background-color: #fff;
+    width: 100%;
+    height: 7vh;
+    overflow: hidden;
+
+}
+
+
+
+.section-f p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #ccc;
 }
 
 
@@ -521,12 +559,289 @@ header {
 
 
 
+
+/*-------@Media for xl screen------- */
+
+@media(min-width: 1900px) {
+
+    /*---Header Section-- */
+
+    .big-bold {
+        font-size: 10rem;
+
+    }
+
+    .big-bold-2 {
+        font-size: 10rem;
+    }
+
+    .big-bold-md {
+        font-size: 4.5rem;
+
+    }
+
+
+    .btn {
+        font-size: 2rem;
+
+    }
+
+
+    /*---Section A-- */
+
+    .section-a h2 {
+        z-index: 10;
+        text-align: left;
+        font-size: 90px;
+        padding-top: 200px;
+
+    }
+
+
+    .section-a {
+        width: 60%;
+        height: 30vh;
+        margin: auto;
+        text-align: left;
+        position: relative;
+
+
+    }
+
+
+    .section-a p {
+        font-size: 1.5rem;
+    }
+
+    .section-a img {
+        display: inline-block;
+        width: 50px;
+
+    }
+
+    /*---Section B-- */
+
+    .card {
+        width: 85%;
+        margin: auto;
+        color: #333;
+        cursor: pointer;
+
+    }
+
+    .card h2 {
+        font-size: 3rem;
+    }
+
+    .card - {
+        font-size: 2rem;
+    }
+
+
+    .white-circle {
+
+        height: 200px;
+        width: 200px;
+    }
+
+
+
+    .white-circle img {
+        height: 180px;
+        width: 180px;
+        justify-content: center;
+        margin-top: 5px;
+        opacity: 0.8;
+        margin-left: 2px;
+        margin-bottom: 15px;
+
+    }
+
+
+    /*---Section C-- */
+
+    .section-c h2 {
+        font-size: 6rem;
+        padding-bottom: 20px;
+    }
+
+    .vs-icon {
+        content: "VS";
+        background-color: #fff;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        font-size: 25px;
+        
+    }
+
+    .section-c p{
+        font-size: 2rem;
+        width: 90%;
+    }
+    
+    
+     /*---Section D-- */
+    
+     .img-container img {
+        width: 120%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    
+    .project-cards h2{
+        font-size: 2.5rem;
+    }
+    
+     /*---Section E-- */
+    
+  .large-circle {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+ .large-circle img {
+    width: 210px;
+    height: 210px;
+}
+    
+    .section-e h2{
+        font-size: 3rem;
+    }  
+    
+     .section-e p{
+        font-size: 2rem;
+    } 
+    
+    .icon-container{
+        width: 30%;
+    }
+    
+}
+
+
+
+
+
+/* ----Tablet Responce------ */
+
+
+@media(max-width: 768px) {
+
+
+
+
+    /* ----Header Section-- */
+
+
+    .big-bold {
+        font-size: 5rem;
+        z-index: 5;
+        overflow: none;
+        animation: pop-in 2s ease-out forwards;
+        text-align: center;
+
+    }
+
+    .big-bold-2 {
+        font-size: 5rem;
+        z-index: 7;
+        animation: pop-in 3s ease-out forwards;
+        text-align: center;
+    }
+
+
+    /* ----Section B---- */
+
+    .section-b {
+        padding-top: 45px;
+    }
+
+    .section-b .cards {
+        width: 100%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        grid-gap: 2%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card:hover > .white-circle {
+        transform: translateY(-0px);
+        box-shadow: 0 0 0;
+
+    }
+
+    /* ----Section C---- */
+
+    .vs-icon {
+        content: "VS";
+        background-color: #fff;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        font-weight: bold;
+        color: #fbb034;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 16px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 105vh;
+        padding: 10px;
+
+    }
+
+    .section-c h2 {
+        font-size: 2.8em;
+    }
+
+
+
+
+
+    /* ----Section D---- */
+
+    .ui-card {
+        height: 35vh;
+        width: 95%;
+        background-color: #fff;
+        border-radius: 30px;
+        padding-top: 10%;
+        box-shadow: 10px 5px 10px 5px #8888;
+        overflow: hidden;
+
+
+    }
+
+    .img-container img {
+        width: 120%;
+        height: 100%;
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
 /*-------@Media for Mobile------- */
 
 
 @media(max-width: 500px) {
 
     /*----Mobile Section-header---- */
+
 
     .container {
 
@@ -553,7 +868,7 @@ header {
     }
 
 
-    header {
+    .header {
         width: 100%;
         overflow: hidden;
         height: 90vh;
@@ -673,30 +988,34 @@ header {
         height: 75vh;
     }
 
+
+    .section-c h2 {
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
     .vs-icon {
         content: "VS";
         background-color: #fff;
         border-radius: 50%;
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         font-weight: bold;
         color: #fbb034;
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
-        font-size: 0.6rem;
-        position: relative;
-        top: -120vh;
-        transform: translateX(50%);
-        left: 89%;
+        font-size: 11px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 105vh;
         padding: 10px;
-        box-shadow: 5px 5px #8888;
 
     }
-
-
-
 
 
     .box-item {
@@ -728,6 +1047,7 @@ header {
         align-items: center;
         text-align: center;
         justify-self: center;
+        padding-right: 1.6em;
     }
 
 
@@ -738,6 +1058,7 @@ header {
         align-items: center;
         text-align: center;
         justify-self: center;
+        padding-left: 1.6em;
     }
 
     /*----Mobile---Section d------- */
@@ -751,22 +1072,14 @@ header {
 
 
 
-
-
-
     .icon-container {
-        width: 90%;
+        width: 250px;
+        align-items: center;
     }
 
 
 
 }
-
-
-
-
-
-
 
 
 
