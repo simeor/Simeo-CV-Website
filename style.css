@@ -80,7 +80,7 @@ header {
     transform: translatey(0px);
     animation: pop-in 4s ease-out forwards;
     box-shadow: 0px 6px 8px #888888;
-    
+
 
 }
 
@@ -92,10 +92,10 @@ header {
 }
 
 
-/*-------Section A------- */
+/*-------About Section------- */
 
 
-.section-a {
+.about {
     width: 80%;
     height: 30vh;
     margin: auto;
@@ -106,12 +106,12 @@ header {
 }
 
 
-.section-a p {
+.about p {
     z-index: 8;
 }
 
 
-.section-a h2 {
+.about h2 {
     z-index: 10;
     text-align: left;
     font-size: 90px;
@@ -122,7 +122,7 @@ header {
 }
 
 
-.section-a img {
+.about img {
     display: inline-block;
     width: 35px;
 
@@ -145,10 +145,10 @@ header {
 
 
 
-/*-------Section B------- */
+/*-------Cards Section------- */
 
 
-.section-b {
+.cards-section {
     background-color: #fbb034;
     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     width: 100%;
@@ -157,7 +157,7 @@ header {
 }
 
 
-.section-b .cards {
+.cards-section .cards {
     width: 100%;
     height: 90%;
     display: grid;
@@ -176,7 +176,6 @@ header {
     width: 75%;
     margin: auto;
     color: #333;
-    cursor: pointer;
 
 }
 
@@ -230,11 +229,11 @@ header {
 }
 
 
-/*-------Section C------- */
+/*------- F&B Section ------- */
 
 
 
-.section-c {
+.fandb {
     display: grid;
     grid-gap: 1%;
     grid-template-columns: repeat(2, 1fr);
@@ -245,7 +244,7 @@ header {
 }
 
 
-.section-c h2 {
+.fandb h2 {
     font-size: 3rem;
     padding-bottom: 20px;
 }
@@ -315,9 +314,9 @@ header {
 
 
 
-/*-------Section D------- */
+/*-------Project Section------- */
 
-.section-d {
+.projects {
     width: 100%;
     height: 60vh;
     background-color: #f5f7fa;
@@ -432,9 +431,9 @@ header {
 
 
 
-/*-------Section e------- */
+/*-------Contact Section------- */
 
-.section-e {
+.contact {
     width: 100%;
     height: 80vh;
     background-color: #fbb034;
@@ -444,6 +443,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    position: relative;
 }
 
 
@@ -518,21 +518,27 @@ header {
 
 
 
-/*-------Section f------- */
+/*-------footer------- */
 
 
 
-.section-f {
+footer {
     background-color: #fff;
     width: 100%;
-    height: 7vh;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     overflow: hidden;
+
+
 
 }
 
 
 
-.section-f h4 {
+footer h4 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -540,10 +546,10 @@ header {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 25px;
     color: #969799;
-}
 
+}
 
 
 
@@ -588,9 +594,9 @@ header {
     }
 
 
-    /*---Section A-- */
+    /*---About Section-- */
 
-    .section-a h2 {
+    .about h2 {
         z-index: 10;
         text-align: left;
         font-size: 90px;
@@ -599,7 +605,7 @@ header {
     }
 
 
-    .section-a {
+    .about {
         width: 60%;
         height: 30vh;
         margin: auto;
@@ -610,17 +616,20 @@ header {
     }
 
 
-    .section-a p {
+    .about p {
         font-size: 1.5rem;
     }
 
-    .section-a img {
+    .about img {
         display: inline-block;
         width: 50px;
 
     }
 
-    /*---Section B-- */
+
+
+
+    /*---Cards Section-- */
 
     .card {
         width: 85%;
@@ -659,9 +668,9 @@ header {
     }
 
 
-    /*---Section C-- */
+    /*---F&B Section-- */
 
-    .section-c h2 {
+    .fandb h2 {
         font-size: 6rem;
         padding-bottom: 20px;
     }
@@ -673,53 +682,53 @@ header {
         width: 130px;
         height: 130px;
         font-size: 25px;
-        
+
     }
 
-    .section-c p{
+    .fandb p {
         font-size: 2rem;
         width: 90%;
     }
-    
-    
-     /*---Section D-- */
-    
-     .img-container img {
+
+
+    /*---Projects Section-- */
+
+    .img-container img {
         width: 120%;
         height: 100%;
-        
+
     }
-    
-    .project-cards h2{
+
+    .project-cards h2 {
         font-size: 2.5rem;
     }
-    
-     /*---Section E-- */
-    
-  .large-circle {
-    width: 250px;
-    height: 250px;
-}
+
+    /*---Contact-- */
+
+    .large-circle {
+        width: 250px;
+        height: 250px;
+    }
 
 
 
- .large-circle img {
-    width: 210px;
-    height: 210px;
-}
-    
-    .section-e h2{
+    .large-circle img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .contact h2 {
         font-size: 3rem;
-    }  
-    
-     .section-e p{
+    }
+
+    .contact p {
         font-size: 2rem;
-    } 
-    
-    .icon-container{
+    }
+
+    .icon-container {
         width: 30%;
     }
-    
+
 }
 
 
@@ -754,13 +763,13 @@ header {
     }
 
 
-    /* ----Section B---- */
+    /* ----Cards Section---- */
 
-    .section-b {
+    .cards-section {
         padding-top: 45px;
     }
 
-    .section-b .cards {
+    .cards-section .cards {
         width: 100%;
         height: 90%;
         display: grid;
@@ -778,7 +787,7 @@ header {
 
     }
 
-    /* ----Section C---- */
+    /* ----F&B Section---- */
 
     .vs-icon {
         content: "VS";
@@ -803,7 +812,7 @@ header {
 
     }
 
-    .section-c h2 {
+    .fandb h2 {
         font-size: 2.8em;
     }
 
@@ -811,7 +820,7 @@ header {
 
 
 
-    /* ----Section D---- */
+    /* ----projects Section---- */
 
     .ui-card {
         height: 35vh;
@@ -828,7 +837,7 @@ header {
     .img-container img {
         width: 120%;
         height: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
 
@@ -886,9 +895,9 @@ header {
 
 
 
-    /*----Mobile Section-a---- */
+    /*----Mobile About Section---- */
 
-    .section-a h2 {
+    .about h2 {
         z-index: 10;
         text-align: left;
         font-size: 3rem;
@@ -900,7 +909,7 @@ header {
     }
 
 
-    .section-a img {
+    .about img {
         display: inline-block;
         width: 30px;
 
@@ -911,17 +920,17 @@ header {
     }
 
 
-    /*---Mobile--Section B------- */
+    /*---Mobile--Cards Section------- */
 
 
-    .section-b {
+    .cards-section {
         padding: 1.5rem;
         height: 100%;
         margin-bottom: 10px;
     }
 
 
-    .section-b .cards {
+    .cards-section .cards {
         width: 100%;
         height: 135%;
         display: grid;
@@ -984,13 +993,13 @@ header {
 
     }
 
-    /*----Mobile---Section c------- */
-    .section-c {
+    /*----Mobile---F&B Section------- */
+    .fandb {
         height: 75vh;
     }
 
 
-    .section-c h2 {
+    .fandb h2 {
         font-size: 2rem;
         padding-bottom: 20px;
     }
@@ -1062,14 +1071,14 @@ header {
         padding-left: 1.6em;
     }
 
-    /*----Mobile---Section d------- */
+    /*----Mobile---Projects Section ------- */
 
 
-    .section-d {
+    .projects {
         display: none;
     }
 
-    /*----Mobile---Section e------- */
+    /*----Mobile---Contact------- */
 
 
 
