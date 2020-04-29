@@ -108,6 +108,7 @@ header {
 
 .about p {
     z-index: 8;
+    margin-top:5px;
 }
 
 
@@ -313,8 +314,53 @@ header {
 }
 
 
+/*-------Main Project------- */
 
-/*-------Project Section------- */
+.main-project{
+    height: 100vh;
+    width: 100%;
+    background-color: #f73e6f;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px solid #fff;
+}
+
+.main-project h1{
+    font-size: 4rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+   
+}
+
+
+.main-project li{
+list-style: none;
+text-align: center;
+
+    
+}
+
+.main-project h3{
+text-decoration: underline;
+
+}
+
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+
+
+/*-------Projects Section------- */
 
 .projects {
     width: 100%;
@@ -525,7 +571,7 @@ header {
 footer {
     background-color: #fff;
     width: 100%;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -855,7 +901,7 @@ footer h4 {
 
     .container {
 
-        border-radius: 15px;
+        border-radius: 20px;
 
     }
 
@@ -1070,6 +1116,15 @@ footer h4 {
         justify-self: center;
         padding-left: 1.6em;
     }
+    
+    
+    /*----Mobile---Main Project Section ------- */  
+
+    .main-project h1{
+      font-size: 37px;
+      margin-bottom: 35px;
+    }
+    
 
     /*----Mobile---Projects Section ------- */
 
