@@ -19,46 +19,75 @@ a {
     color: black;
 }
 
+ul li {
+
+    list-style-type: none;
+}
+
 
 
 /*-------Header Section------- */
 
+.svgimg {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    bottom: 3px;
+
+}
 
 
+
+}
 
 .big-bold {
-    font-size: 7rem;
+    font-size: 6rem;
     z-index: 5;
     overflow: none;
     animation: pop-in 2s ease-out forwards;
     text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3px;
+    pointer-events: none;
 
 }
 
-.big-bold-2 {
-    font-size: 8rem;
+.big-bold {
+    font-size: 6rem;
     z-index: 7;
     animation: pop-in 3s ease-out forwards;
     text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8.5px;
+    pointer-events: none;
+    border-radius: 8px;
+
+
 }
 
-.big-bold-md {
-    animation: pop-in 3s ease-out forwards;
 
-}
 
 
 header {
     width: 100%;
     overflow: hidden;
-    height: 99vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fbb034;
-    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     animation: pop-in 2s ease-out forwards;
+    position: relative;
+    
 
 }
 
@@ -73,13 +102,14 @@ header {
     margin-right: 5px;
     margin-top: 22px;
     cursor: pointer;
-    border: none;
+    border: solid 3px #249BD6;
     color: black;
     z-index: 9;
     background-color: #fff;
     transform: translatey(0px);
-    animation: pop-in 4s ease-out forwards;
-    box-shadow: 0px 6px 8px #888888;
+    border-radius: 20px;
+
+
 
 
 }
@@ -92,57 +122,47 @@ header {
 }
 
 
-/*-------About Section------- */
-
-
-.about {
-    width: 80%;
-    height: 30vh;
-    margin: auto;
-    text-align: left;
-    position: relative;
-
-
-}
-
-
-.about p {
-    z-index: 8;
-    margin-top:5px;
-}
-
-
-.about h2 {
-    z-index: 10;
-    text-align: left;
-    font-size: 90px;
-    padding-top: 70px;
-
-
-
-}
-
-
-.about img {
-    display: inline-block;
-    width: 35px;
-
-}
 
 
 
 
-.empty-space {
+.about-me{
     width: 100%;
-    height: 65vh;
-    margin: auto;
-    background-color: #ededed;
-
-
-
-
-
+    height: 100vh;
+    margin-top: 50px;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
 }
+
+.about-me svg{
+    opacity: 0.9;
+    position: relative;
+    background-color: #FBB036;
+}
+
+.about-me-section{
+    position: absolute;
+    pointer-events: none;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    
+}
+.about-me h1{
+    font-size: 5rem;
+    z-index: 7;
+    text-align: center;
+    padding: 8.5px;
+    pointer-events: none;
+    border-radius: 8px;
+    animation: pop-in 1s ease-out forwards;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    
+}
+
 
 
 
@@ -150,8 +170,7 @@ header {
 
 
 .cards-section {
-    background-color: #fbb034;
-    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    background-color: #FBB036;
     width: 100%;
     padding: 1.5rem;
     height: 100vh;
@@ -159,7 +178,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -172,7 +191,7 @@ header {
     grid-gap: 2%;
     justify-content: center;
     align-items: center;
-  
+
 
 }
 
@@ -183,7 +202,7 @@ header {
     width: 75%;
     margin: auto;
     color: #333;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -208,6 +227,7 @@ header {
     z-index: 5;
     position: relative;
     margin-top: 5px;
+    color: #fff;
 
 }
 
@@ -218,7 +238,7 @@ header {
 
 
 .white-circle {
-    background: #fff;
+    background: #E66888;
     height: 100px;
     width: 100px;
     margin: auto;
@@ -257,7 +277,7 @@ header {
 
 .fandb h2 {
     font-size: 3rem;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .vs-icon {
@@ -267,7 +287,7 @@ header {
     width: 100px;
     height: 100px;
     font-weight: bold;
-    color: #fbb034;
+    color: #E66888;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -304,8 +324,7 @@ header {
 
 
 .front-end-box {
-    background-color: #738bdc;
-    background-image: linear-gradient(315deg, #738bdc 0%, #48c3eb 74%);
+    background-color:#37A5D9;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -314,8 +333,7 @@ header {
 
 
 .back-end-box {
-    background-color: #637081;
-    background-image: linear-gradient(315deg, #637081 0%, #0000 74%);
+    background-color:  #83D0BB;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -323,9 +341,20 @@ header {
 
 }
 
+
+.skills-bullble li {
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 7px;
+    display: inline-block;
+    border: none;
+}
+
 /*-------Skills Section------- */
 
-.skills{
+.skills {
     height: 110vh;
     width: 100%;
     display: flex;
@@ -333,142 +362,156 @@ header {
     align-items: center;
     overflow: hidden;
     padding: 40px;
+    position: relative;
+    background-color: #FBB036;
 }
 
 
-.clip-card h3 i{
+.clip-card h3 i {
     color: white;
     font-size: 25px;
     margin-bottom: 6px;
 }
 
-.clip-card p{
+.clip-card p {
     margin-top: 5px;
     font-size: 18px;
 }
-.clip-cards-wrapper{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 35px;
-  width: 100%;
-  margin: auto;
-  
-  
+
+.clip-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 55px;
+    width: 100%;
+    margin: auto;
+
+
 
 }
-.clip-card{
-  box-sizing: border-box;
-  height: auto;
-  width: 100%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.16), 0 6px 6px rgba(0,0,0,0.23);
-  margin: 15px auto;
-  border-radius: 10px;
-  min-width: 350px;
-  max-width: 560px;
-  
-}
-.clip-card .clip-header{
-  height:auto;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  background: blue;
-  color: white;
-  font-family: 'Playfair Display', serif;
-  clip-path: circle(40% at 0% 0%);
-  transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-  cursor: pointer;
-  
+
+.clip-card {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 15px auto;
+    border-radius: 40px 40px 40px 40px;
+    min-width: 350px;
+    max-width: 560px;
+    background-color: #fff;
+
 }
 
 
-
-.clip-card-1 .clip-header{
- background: #f4723a;
- 
-}
-
-.clip-card-1:hover .clip-header{
-  background: #ff5959
-}
-
-.clip-card-2 .clip-header{
- background: #23abef;   
-}
-
-.clip-card-2:hover .clip-header{
-  background: #22d1ee;
-}
-
-.clip-card-3 .clip-header{
- background: #ffd717;   
-}
-
-.clip-card-3:hover .clip-header{
-  background: #5be7a9;
-}
-
-.clip-card-4 .clip-header{
- background: #f23557;   
-}
-
-.clip-card-4:hover .clip-header{
-  background: #d91303;
-}
+.clip-card .clip-header {
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: blue;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    clip-path: circle(40% at 0% 0%);
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    border-radius: 40px 40px 40px 40px;
 
 
-.clip-card-5 .clip-header{
- background: #30e3ca;   
-}
-
-.clip-card-5:hover .clip-header{
-  background: #00d1ff;
-}
-
-.clip-card-6 .clip-header{
- background: #ea7dc7;   
-}
-
-.clip-card-6:hover .clip-header{
-  background: #ff1f5a;
 }
 
 
 
+.clip-card-1 .clip-header {
+    background: #f4723a;
 
-
-.clip-card .clip-header p{
-  opacity: 0;
-  transition: all  1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 }
-.clip-card:hover .clip-header{
-  clip-path: circle(100% at 60% 60%) ;
-  width: 100%;
-  height: 100%;
 
-  
+.clip-card-1:hover .clip-header {
+    background: #ff5959
 }
-.clip-card:hover .clip-header p{
-  opacity: 1;
-  height: 100%;
-  
+
+.clip-card-2 .clip-header {
+    background: #23abef;
 }
-.clip-card .clip-header h3, .clip-card .clip-header h4{
-  margin: 0!important;
-  padding: 0;
-  
-} 
+
+.clip-card-2:hover .clip-header {
+    background: #22d1ee;
+}
+
+.clip-card-3 .clip-header {
+    background: #ffd717;
+}
+
+.clip-card-3:hover .clip-header {
+    background: #5be7a9;
+}
+
+.clip-card-4 .clip-header {
+    background: #E34F67;
+}
+
+.clip-card-4:hover .clip-header {
+    background: #d91303;
+}
+
+
+.clip-card-5 .clip-header {
+    background: #83D0BB;
+}
+
+.clip-card-5:hover .clip-header {
+    background: #00d1ff;
+}
+
+.clip-card-6 .clip-header {
+    background: #805D9A;
+}
+
+.clip-card-6:hover .clip-header {
+    background: #ff1f5a;
+}
+
+
+
+
+
+.clip-card .clip-header p {
+    opacity: 0;
+    transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+.clip-card:hover .clip-header {
+    clip-path: circle(100% at 60% 60%);
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.clip-card:hover .clip-header p {
+    opacity: 1;
+    height: 100%;
+
+}
+
+.clip-card .clip-header h3,
+.clip-card .clip-header h4 {
+    margin: 0 !important;
+    padding: 0;
+
+}
 
 
 
 /*-------Main Project------- */
 
-.main-project{
+.main-project {
     height: 100vh;
     width: 100%;
     background-color: #f73e6f;
@@ -482,29 +525,29 @@ header {
     border-top: 7px solid #fff;
 }
 
-.main-project h1{
+.main-project h1 {
     font-size: 4rem;
     margin-bottom: 5px;
     margin-top: 10px;
-   
-}
-
-
-.main-project li{
-list-style: none;
-text-align: center;
-
-    
-}
-
-.main-project h3{
-text-decoration: underline;
 
 }
 
-.grid-list{
+
+.main-project li {
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.main-project h3 {
+    text-decoration: underline;
+
+}
+
+.grid-list {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -792,40 +835,7 @@ footer h4 {
     }
 
 
-    /*---About Section-- */
-
-    .about h2 {
-        z-index: 10;
-        text-align: left;
-        font-size: 90px;
-        padding-top: 160px;
-
-    }
-
-
-    .about {
-        width: 60%;
-        height: 30vh;
-        margin: auto;
-        text-align: left;
-        position: relative;
-
-
-    }
-
-
-    .about p {
-        font-size: 1.5rem;
-    }
-
-    .about img {
-        display: inline-block;
-        width: 50px;
-
-    }
-
-
-
+    
 
     /*---Cards Section-- */
 
@@ -930,8 +940,20 @@ footer h4 {
 }
 
 
+/* ----window reduce Responce------ */
 
+@media(max-width: 1062px) {
 
+    .big-bold {
+        font-size: 5rem;
+    }
+
+    .big-bold-2 {
+        font-size: 5rem;
+
+    }
+
+}
 
 /* ----Tablet Responce------ */
 
@@ -984,10 +1006,10 @@ footer h4 {
         box-shadow: 0 0 0;
 
     }
-    
+
     /*-------Skills Section------- */
 
-    .skills{
+    .skills {
         display: none;
     }
 
@@ -1063,22 +1085,36 @@ footer h4 {
 
     }
 
+
+    svg {
+        display: none;
+    }
+
+    .svgimg {
+        background-color: #fed214;
+    }
+
     .big-bold {
         font-size: 3.3rem;
         text-align: center;
-        color: white;
+        color: #000;
         margin-bottom: 5px;
+        padding: 4px;
+        background: none;
     }
 
     .big-bold-2 {
         font-size: 2.8rem;
         text-align: center;
         margin-bottom: 20px;
+        padding: 4px;
+        background: none;
 
     }
 
-    .big-bold-md {
+    .big-bold {
         text-align: center;
+        padding: 4px;
     }
 
 
@@ -1089,7 +1125,8 @@ footer h4 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        background-color: #fed214;
+        padding: 10px;
         margin-bottom: 50px;
 
         justify-content: center;
@@ -1097,30 +1134,11 @@ footer h4 {
 
     }
 
+    
+    /*---About Me Section------- */
 
-
-    /*----Mobile About Section---- */
-
-    .about h2 {
-        z-index: 10;
-        text-align: left;
-        font-size: 3rem;
-        padding-top: 70px;
-        margin-bottom: 15px;
-
-
-
-    }
-
-
-    .about img {
-        display: inline-block;
-        width: 30px;
-
-    }
-
-    .btn {
-        font-size: 1rem;
+    .about-me{
+        display: none;
     }
 
 
@@ -1200,6 +1218,7 @@ footer h4 {
     /*----Mobile---F&B Section------- */
     .fandb {
         height: 75vh;
+        display: none;
     }
 
 
@@ -1274,15 +1293,28 @@ footer h4 {
         justify-self: center;
         padding-left: 1.6em;
     }
-    
-    
-    /*----Mobile---Main Project Section ------- */  
 
-    .main-project h1{
-      font-size: 37px;
-      margin-bottom: 35px;
+
+    .skills-bullble li {
+        color: black;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 5px 10px;
+        margin: 7px;
+        display: inline-block;
+        font-size: 14px;
+
     }
-    
+
+
+    /*----Mobile---Main Project Section ------- */
+
+    .main-project h1 {
+        font-size: 37px;
+        margin-bottom: 35px;
+        margin-top: 1px;
+    }
+
 
     /*----Mobile---Projects Section ------- */
 
@@ -1326,7 +1358,6 @@ footer h4 {
     0% {
         opacity: 0;
         transform: translateY(-4rem) scale(.7);
-        border-radius: 80px;
         box-shadow: 3px 3px 3px #ccc;
 
     }
@@ -1334,7 +1365,7 @@ footer h4 {
     100% {
         opacity: 1;
         transform: none;
-        border-radius: 0px;
+        
 
 
     }
