@@ -1107,11 +1107,12 @@ footer h4 {
     .container {
 
         border-radius: 20px;
+        
 
     }
 
-    .header svg{
-        transform: scale(2);
+     .mainsvg{
+       transform: scale(1.9);
     }
 
 
@@ -1139,13 +1140,14 @@ footer h4 {
     .header {
         width: 100%;
         overflow: hidden;
-        height: 70vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
         margin-bottom: 50px;
         justify-content: center;
+        
 
     }
 
