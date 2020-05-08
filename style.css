@@ -46,8 +46,6 @@ svg {
 
 
 
-}
-
 .big-bold {
     font-size: 6rem;
     z-index: 5;
@@ -104,13 +102,10 @@ header {
     cursor: pointer;
     border: solid 3px #249BD6;
     color: black;
-    z-index: 9;
+    z-index: 10;
     background-color: #fff;
     transform: translatey(0px);
     border-radius: 20px;
-
-
-
 
 }
 
@@ -124,6 +119,8 @@ header {
 
 
 
+/*-------About Me Section------- */
+
 
 
 .about-me{
@@ -133,10 +130,11 @@ header {
     background: #fff;
     overflow: hidden;
     position: relative;
+    
 }
 
 .about-me svg{
-    opacity: 0.9;
+    opacity: 1;
     position: relative;
     background-color: #FBB036;
 }
@@ -151,7 +149,7 @@ header {
     
 }
 .about-me h1{
-    font-size: 5rem;
+    font-size: 4.8rem;
     z-index: 7;
     text-align: center;
     padding: 8.5px;
@@ -364,6 +362,7 @@ header {
     padding: 40px;
     position: relative;
     background-color: #FBB036;
+    padding: 10px 0;
 }
 
 
@@ -384,6 +383,7 @@ header {
     grid-gap: 55px;
     width: 100%;
     margin: auto;
+    padding: 10px 0;
 
 
 
@@ -399,6 +399,7 @@ header {
     min-width: 350px;
     max-width: 560px;
     background-color: #fff;
+    display: flex;
 
 }
 
@@ -515,6 +516,8 @@ header {
     height: 100vh;
     width: 100%;
     background-color: #f73e6f;
+    background-image: url("Media/Mataura.png");
+    background-size: cover;
     color: white;
     padding: 50px;
     text-align: center;
@@ -523,7 +526,24 @@ header {
     justify-content: center;
     align-items: center;
     border-top: 7px solid #fff;
+    position: relative;
+    z-index: 5;
 }
+
+.main-project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f73e6f;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+
 
 .main-project h1 {
     font-size: 4rem;
@@ -983,6 +1003,11 @@ footer h4 {
     }
 
 
+     /* ----About Me-- */
+    
+    .about-me h1{
+        font-size: 3.5rem;
+    }
     /* ----Cards Section---- */
 
     .cards-section {
@@ -1085,26 +1110,22 @@ footer h4 {
 
     }
 
-
-    svg {
-        display: none;
+    .header svg{
+        transform: scale(2);
     }
 
-    .svgimg {
-        background-color: #fed214;
-    }
 
     .big-bold {
-        font-size: 3.3rem;
+        font-size: 2.5rem;
         text-align: center;
         color: #000;
         margin-bottom: 5px;
         padding: 4px;
-        background: none;
+        background: #fff;
     }
 
     .big-bold-2 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         text-align: center;
         margin-bottom: 20px;
         padding: 4px;
@@ -1112,25 +1133,19 @@ footer h4 {
 
     }
 
-    .big-bold {
-        text-align: center;
-        padding: 4px;
-    }
+
 
 
     .header {
         width: 100%;
         overflow: hidden;
-        height: 90vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #fed214;
         padding: 10px;
         margin-bottom: 50px;
-
         justify-content: center;
-
 
     }
 
