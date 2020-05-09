@@ -1369,7 +1369,7 @@ footer h4 {
     }
 
     .sim_img {
-        width: 250px;
+        width: 240px;
 
     }
 
@@ -1385,11 +1385,12 @@ footer h4 {
 
 
     .highlight-container {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .more_about-me{
-        height: 115vh;
+        height: 100%;
+        
     }
 
 
