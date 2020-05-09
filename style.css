@@ -40,7 +40,7 @@ ul li {
     width: 100%;
     height: 110%;
     overflow: hidden;
-    
+
 }
 
 svg {
@@ -92,7 +92,7 @@ header {
     background-color: #fbb034;
     animation: pop-in 2s ease-out forwards;
     position: relative;
-    
+
 
 }
 
@@ -130,32 +130,33 @@ header {
 
 
 
-.about-me{
+.about-me {
     width: 100%;
     height: 100vh;
     margin-top: 50px;
     background: #fff;
     overflow: hidden;
     position: relative;
-    
+
 }
 
-.about-me svg{
+.about-me svg {
     opacity: 1;
     position: relative;
     background-color: #FBB036;
 }
 
-.about-me-section{
+.about-me-section {
     position: absolute;
     pointer-events: none;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    
+
 }
-.about-me h1{
+
+.about-me h1 {
     font-size: 4.8rem;
     z-index: 7;
     text-align: center;
@@ -165,8 +166,8 @@ header {
     animation: pop-in 1s ease-out forwards;
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
-    margin-top:20px;
-    
+    margin-top: 20px;
+
 }
 
 
@@ -174,17 +175,17 @@ header {
 /*-------More About Me Section------- */
 
 
-.more_about-me{
-    width:100%;
+.more_about-me {
+    width: 100%;
     height: 100vh;
-    overflow:hidden;
-     display: flex;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     width: 100%;
-     flex-direction: column;
-     padding: 40px;
+    flex-direction: column;
+    padding: 40px;
     position: relative;
     background-color: #fff;
 }
@@ -192,15 +193,15 @@ header {
 
 
 
-.more_about-me h1{
+.more_about-me h1 {
     font-family: 'Satisfy', cursive;
     font-size: 4.2rem;
     margin-bottom: 20px;
-    
+
 }
 
 
-.more_about-me p{
+.more_about-me p {
     width: 80%;
     margin-right: 10px;
     font-size: 2rem;
@@ -208,24 +209,24 @@ header {
     letter-spacing: 1px;
     word-spacing: 5px;
     text-transform: lowercase;
-    
-    
+
+
 }
 
 
-.highlight-container{
-  position: relative; 
-  display: inline-block;
-  font-size: 2.3rem;
+.highlight-container {
+    position: relative;
+    display: inline-block;
+    font-size: 2.3rem;
     font-family: 'Amatic SC', cursive;
     letter-spacing: 1px;
     word-spacing: 5px;
     text-transform: lowercase;
-    
-} 
-  
 
-.highlight::before{
+}
+
+
+.highlight::before {
     content: ' ';
     display: block;
     height: 90%;
@@ -239,35 +240,35 @@ header {
     left: -1px;
     border-radius: 5% 25% 20% 24%;
     padding: 12px 3px 3px 8px;
-    
-        
+
+
 }
 
 
 
-.about-content{
+.about-content {
     display: grid;
-    grid-template-columns: 1.5fr  2fr;
+    grid-template-columns: 1.5fr 2fr;
 }
 
-.about_me_img{
+.about_me_img {
     position: relative;
 
 }
 
-.sim_img{
+.sim_img {
     width: 420px;
-   
+
 }
 
-.light_img{
+.light_img {
     position: absolute;
-    top:-20px;
+    top: -20px;
     right: 60px;
     width: 150px;
     transform: rotate(19deg);
     opacity: 0.8;
-   
+
 }
 
 
@@ -278,7 +279,7 @@ header {
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -448,7 +449,7 @@ header {
 
 
 .front-end-box {
-    background-color:#37A5D9;
+    background-color: #37A5D9;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -457,7 +458,7 @@ header {
 
 
 .back-end-box {
-    background-color:  #83D0BB;
+    background-color: #83D0BB;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -981,27 +982,28 @@ footer h4 {
     }
 
 
-    
-     /*---More About Me Section------- */
-    
 
-    
-    
-    .more_about-me h1{
-    font-size: 4.5rem;
-    margin-top: 40px;
+    /*---More About Me Section------- */
+
+
+
+
+    .more_about-me h1 {
+        font-size: 4.5rem;
+        margin-top: 40px;
     }
-        .sim_img{
-    width: 450px;
-   
-}
-    
-    .light_img{
-    right: 200px;
-    width: 160px;
+
+    .sim_img {
+        width: 450px;
+
     }
-    
-    
+
+    .light_img {
+        right: 200px;
+        width: 160px;
+    }
+
+
 
 
 
@@ -1123,6 +1125,12 @@ footer h4 {
 
 }
 
+
+
+
+
+
+
 /* ----Tablet Responce------ */
 
 
@@ -1151,11 +1159,14 @@ footer h4 {
     }
 
 
-     /* ----About Me-- */
-    
-    .about-me h1{
+    /* ----About Me-- */
+
+    .about-me h1 {
         font-size: 3.5rem;
+
     }
+
+
     /* ----Cards Section---- */
 
     .cards-section {
@@ -1179,38 +1190,39 @@ footer h4 {
         box-shadow: 0 0 0;
 
     }
-    
-    
-    
-     /*---More About Me Section------- */
-    
-    .about-content{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-    
-    
-    .more_about-me h1{
-    font-size: 2.5rem;
+
+
+
+    /*---More About Me Section------- */
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
     }
-        .sim_img{
-    width: 250px;
-   
-}
-    
-    .light_img{
-    right: 200px;
-    width: 100px;
+
+
+    .more_about-me h1 {
+        font-size: 3.5rem;
     }
-    
-    
-    .more_about-me p{
-    font-size: 18px;    
-}
-    
-    
-.highlight-container{
-  font-size: 1.5rem;
+
+    .sim_img {
+        width: 250px;
+
+    }
+
+    .light_img {
+        right: 200px;
+        width: 100px;
+    }
+
+
+    .more_about-me p {
+        font-size: 18px;
+    }
+
+
+    .highlight-container {
+        font-size: 1.5rem;
     }
 
 
@@ -1289,12 +1301,12 @@ footer h4 {
     .container {
 
         border-radius: 20px;
-        
+
 
     }
 
-     .mainsvg{
-       transform: scale(1.9);
+    .mainsvg {
+        transform: scale(1.9);
     }
 
 
@@ -1329,50 +1341,55 @@ footer h4 {
         padding: 10px;
         margin-bottom: 50px;
         justify-content: center;
-        
+
 
     }
 
-    
+
     /*---About Me Section------- */
 
-    .about-me{
+    .about-me {
         display: none;
     }
-    
 
 
 
-    
-     /*---More About Me Section------- */
-    
-    .about-content{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-    
-    
-    .more_about-me h1{
-    font-size: 2.5rem;
+
+
+    /*---More About Me Section------- */
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
     }
-        .sim_img{
-    width: 250px;
-   
-}
-    
-    .light_img{
-    right: 30px;
-    width: 100px;
+
+
+    .more_about-me h1 {
+        font-size: 2.5rem;
+    }
+
+    .sim_img {
+        width: 250px;
+
+    }
+
+    .light_img {
+        right: 30px;
+        width: 100px;
+    }
+
+
+    .more_about-me p {
+        font-size: 18px;
+    }
+
+
+    .highlight-container {
+        font-size: 1.5rem;
     }
     
-    
-    .more_about-me p{
-    font-size: 18px;    
-}
-    
-    
-.highlight-container{
-  font-size: 1.5rem;
+    .more_about-me{
+        height: 115vh;
     }
 
 
@@ -1599,7 +1616,7 @@ footer h4 {
     100% {
         opacity: 1;
         transform: none;
-        
+
 
 
     }
