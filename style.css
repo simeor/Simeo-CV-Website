@@ -49,6 +49,7 @@ svg {
     opacity: 0.9;
     bottom: 3px;
 
+
 }
 
 
@@ -133,7 +134,7 @@ header {
 .about-me {
     width: 100%;
     height: 100vh;
-    margin-top: 50px;
+    margin-top: 15px;
     background: #fff;
     overflow: hidden;
     position: relative;
@@ -240,9 +241,28 @@ header {
     left: -1px;
     border-radius: 5% 25% 20% 24%;
     padding: 12px 3px 3px 8px;
-
-
+    animation: higlight-in 7s 1.5s ease-in-out infinite;
 }
+
+.highlight2::before {
+    content: ' ';
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgb(251, 176, 54, 0.4);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 5% 25% 20% 24%;
+    padding: 12px 3px 3px 8px;
+    animation: higlight-in 7s 1.9s ease-in-out infinite;
+}
+
+
+
 
 
 
@@ -406,7 +426,7 @@ header {
 }
 
 .vs-icon {
-    content: "VS";
+    content: "";
     background-color: #fff;
     border-radius: 50%;
     width: 100px;
@@ -426,6 +446,11 @@ header {
     bottom: 87vh;
     padding: 10px;
 
+}
+
+.vs-icon img {
+    width: 110px;
+    height: 110px;
 }
 
 
@@ -477,12 +502,48 @@ header {
     border: none;
 }
 
+
+
+/*-------Skills click Section------- */
+.skills-click {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-click h3 {
+    margin-right: 15px;
+}
+
+.skills-click button {
+    font-size: 1.17em;
+    background-color: #F1CF4D;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in;
+
+}
+
+.skills-click button:hover {
+    background-color: #E34F67;
+    color: #fff;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
 /*-------Skills Section------- */
 
 .skills {
     height: 110vh;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -490,6 +551,11 @@ header {
     position: relative;
     background-color: #FBB036;
     padding: 10px 0;
+    display: none;
+}
+
+.skills.show {
+    display: flex;
 }
 
 
@@ -1054,7 +1120,7 @@ footer h4 {
     }
 
     .vs-icon {
-        content: "VS";
+        content: "";
         background-color: #fff;
         border-radius: 50%;
         width: 130px;
@@ -1122,6 +1188,12 @@ footer h4 {
         font-size: 5rem;
 
     }
+
+    .skills-click {
+        display: none
+    }
+
+    ;
 
 }
 
@@ -1229,13 +1301,16 @@ footer h4 {
     /*-------Skills Section------- */
 
     .skills {
-        display: none;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
     }
+
 
     /* ----F&B Section---- */
 
     .vs-icon {
-        content: "VS";
+        content: "";
         background-color: #fff;
         border-radius: 50%;
         width: 70px;
@@ -1283,6 +1358,10 @@ footer h4 {
         width: 120%;
         height: 100%;
         margin-top: 20px;
+    }
+    
+    .skills{
+        display: none;
     }
 
 
@@ -1387,10 +1466,10 @@ footer h4 {
     .highlight-container {
         font-size: 1.3rem;
     }
-    
-    .more_about-me{
+
+    .more_about-me {
         height: 100%;
-        
+
     }
 
 
@@ -1557,6 +1636,10 @@ footer h4 {
         font-size: 14px;
 
     }
+    
+    .skills{
+        display: none;
+    }
 
 
     /*----Mobile---Main Project Section ------- */
@@ -1610,7 +1693,8 @@ footer h4 {
     0% {
         opacity: 0;
         transform: translateY(-4rem) scale(.7);
-        box-shadow: 3px 3px 3px #ccc;
+
+
 
     }
 
@@ -1624,26 +1708,31 @@ footer h4 {
 }
 
 /* ----------------------------------------
- * animation Bounce
+ * Higlight-in
  * ----------------------------------------
  */
 
-@keyframes float {
-    0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-    }
 
-    50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-5px);
+@keyframes higlight-in{
+    0%{
+    opacity: 0;
+    width: 0%;
+    border-radius: 40% 45% 40% 44%;
     }
-
-    100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
+    
+    40% {
+        opacity: 1;
+        width: 100%;
+        border-radius: 5% 25% 20% 24%;
+       
+    }
+    
+   100% {
+        opacity: 1;
+        width: 100%;
     }
 }
+
 
 
 
