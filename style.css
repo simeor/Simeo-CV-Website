@@ -1592,6 +1592,15 @@ footer h4 {
 
 
     }
+    
+    
+     #contact-click {
+        display: block;
+    }
+
+    #phone-click {
+        display: none;
+    }
 
 
     /*---About Me Section------- */
