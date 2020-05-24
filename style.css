@@ -125,6 +125,12 @@ header {
 }
 
 
+#contact-click {
+    display: none;
+}
+
+
+
 
 
 /*-------About Me Section------- */
@@ -1011,7 +1017,7 @@ footer h4 {
 
 /*-------POP UP------- */
 
-.inner-phone{
+.inner-phone {
     position: absolute;
 }
 
@@ -1026,20 +1032,20 @@ footer h4 {
     padding-bottom: 20px;
     font-size: 25px;
     position: absolute;
-    top:30px;
+    top: 30px;
     left: 30px;
-   z-index: 3;
+    z-index: 3;
     height: 90%;
     font-size: 20px;
-    
-    
+
+
 }
 
-.chat:nth-child(4){
+.chat:nth-child(4) {
     animation-delay: 1.5s;
 }
 
-.chat a{
+.chat a {
     color: #fff;
 }
 
@@ -1131,19 +1137,18 @@ footer h4 {
 }
 
 
-.inner-phone{
+.inner-phone {
     position: relative;
-     
+
 }
 
 
-.phone{
+.phone {
     width: 360px;
     height: 740px
-
 }
 
-.contact-pop{
+.contact-pop {
     width: 100vw;
     height: 100%;
     display: flex;
@@ -1153,11 +1158,11 @@ footer h4 {
     margin: auto auto;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    top:0;
+    top: 0;
     left: 0;
     display: none;
     animation: fadeIn 2s ease-in;
-   
+
 }
 
 
@@ -1386,6 +1391,15 @@ footer h4 {
     }
 
 
+    #contact-click {
+        display: block;
+    }
+
+    #phone-click {
+        display: none;
+    }
+
+
     /* ----About Me-- */
 
     .about-me h1 {
@@ -1514,8 +1528,8 @@ footer h4 {
         height: 100%;
         margin-top: 20px;
     }
-    
-    .skills{
+
+    .skills {
         display: none;
     }
 
@@ -1791,8 +1805,8 @@ footer h4 {
         font-size: 14px;
 
     }
-    
-    .skills{
+
+    .skills {
         display: none;
     }
 
@@ -1862,11 +1876,16 @@ footer h4 {
 
 
 @keyframes fadeIn {
-   0% {opacity: 0;
-       transform: translateY(20px)}
-   100% {opacity: 1;
-         transform: translateY(0px)}
-} 
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
 
 /* ----------------------------------------
  * Higlight-in
@@ -1874,21 +1893,21 @@ footer h4 {
  */
 
 
-@keyframes higlight-in{
-    0%{
-    opacity: 0;
-    width: 0%;
-    border-radius: 40% 45% 40% 44%;
+@keyframes higlight-in {
+    0% {
+        opacity: 0;
+        width: 0%;
+        border-radius: 40% 45% 40% 44%;
     }
-    
+
     40% {
         opacity: 1;
         width: 100%;
         border-radius: 5% 25% 20% 24%;
-       
+
     }
-    
-   100% {
+
+    100% {
         opacity: 1;
         width: 100%;
     }
