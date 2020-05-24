@@ -43,6 +43,7 @@
 <body>
 
 
+
     <!-----Header Section ------>
 
 
@@ -1503,7 +1504,7 @@
             <h1 class="big-bold">WEB DESIGN AND</h1>
             <h1 class="big-bold ">DEVELOPMENT</h1>
 
-            <a class="btn" href="#contact">Please, Sir, I Want Some More</a>
+            <a class="btn" id="phone-click">Please, Sir, I Want Some More</a>
         </header>
     </section>
 
@@ -3031,7 +3032,7 @@
         <div class="project-cards pc1">
 
             <div class="ui-card grow ">
-                <h2 id='main'>Project</h2>
+                <h2 id='main'>TBC</h2>
                 <h2 id='second'>
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
@@ -3051,10 +3052,16 @@
 
 
 
-
+             <a target="_blank" href="" >
             <div class="ui-card grow">
-                <h2 id='main'>Project</h2>
-                <h2 id='second'>Info</h2>
+                <h2 id='main'>TBC</h2>
+                <h2 id='second'>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    
+                </h2>
                 <div class="img-container ">
                     <img src="Media/undraw_pair_programming_njlp.svg" alt="">
                     <div class="img-mask"></div>
@@ -3065,7 +3072,7 @@
                 </div>
 
             </div>
-
+           </a>
 
 
 
@@ -3144,6 +3151,64 @@
 
 
 
+ <section class="contact-pop">
+    <div class="inner-phone">
+     <img src="Media/white-mockup.svg" alt="" class="phone">
+        
+         <div class="chat ">
+                <div class="mine messages">
+                    <div class="message">
+                        ...
+                    </div>
+                    <div class="message last">
+                        So you are looking for a devloper ?
+                    </div>
+                </div>
+                <div class="yours messages">
+                    <div class="message" >
+                        Hey yes I am!
+                    </div>
+                    <div class="message" >
+                        Could you provide a link to your github?
+                    </div>
+                    <div class="message last" >
+                        Also your contact details?
+                    </div>
+                </div>
+
+
+                <div class="mine messages" >
+                    <div class="message heartbeat">
+                        <a href="mailto:simeo94@hotmail.com">My email is: simeo94@hotmail.com</a>
+                    </div>
+                    <div class="message last" >
+                        <a target="_blank" href="https://github.com/simeor"><i class="fab fa-github icon-3x"></i></a>
+                    </div>
+
+                </div>
+                
+                <div class="yours messages">
+                <div class="message last" >
+                    Thanks &#128512;
+                </div>
+            </div>
+
+
+            </div>
+            </div>
+ </section>
+
+
+
+
+
+
+
+ 
+
+
+
+
     <!-----Footer ------>
     <footer class="section-f">
         <h4> &copy; Simeo Russo 2020</h4>
@@ -3178,6 +3243,13 @@
             offset: 500,
             duration: 3000,
         });
+        
+        
+        //button to show i-phone
+        
+        document.getElementById('phone-click').addEventListener('click',function(){
+            document.querySelector('.contact-pop').style.display="flex";
+        })
 
         // Button click to show skills
 
