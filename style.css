@@ -342,15 +342,14 @@ header {
     grid-gap: 2%;
     justify-content: center;
     align-items: center;
-
-
+   
 }
 
 
 
 
 .card {
-    width: 75%;
+    width: 74%;
     margin: auto;
     color: #333;
     justify-content: center;
@@ -385,6 +384,7 @@ header {
 .card p {
     z-index: 5;
     position: relative;
+    text-align: center;
 }
 
 
@@ -508,6 +508,228 @@ header {
     border: none;
 }
 
+
+
+/*-------Prototype Section------- */
+
+.prototyping {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transform: scale(0.8);
+    background: #e2dede;
+}
+
+.prototyping-wrap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.nav-wrapper {
+    width: 80%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo {
+    font-size: 12px;
+    background: #000;
+    color: #fff;
+    font-weight: 100;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: #fff;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: black;
+    border-bottom: 2px #FDA500 solid;
+}
+
+.active {
+    color: black;
+}
+
+.gallery-nav {
+    height: 90px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+
+.gallery-nav div {
+    flex: 1;
+    background: #FFFF00;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.arrow {
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    transition: all 2s ease;
+    animation: arrow 2s ease;
+}
+
+@keyframes arrow {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        font-size: 35px;
+        transform: translateX(-10px);
+    }
+}
+
+#white-bg {
+    background-color: #fff;
+}
+
+.column-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.column-wrapper section {
+    display: flex;
+    align-items: center;
+}
+
+.text-section {
+    flex: 1.1;
+    background: #FDA500;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.logo:hover {
+    animation: arrow 2s ease;
+}
+
+.text-section p {
+    max-width: 400px;
+    font-size: 16px;
+    color: dimgray;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.text-section h1 {
+    font-size: 80px;
+    width: 450px;
+    margin-bottom: 50px;
+    padding-top: 16px;
+}
+
+.details-btn {
+    align-self: flex-start;
+    margin-left: 60px;
+    background: #fff;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-section {
+    background: blue;
+    flex: 1.5;
+    background: url("Media/proto.jpeg") no-repeat center center/cover;
+    position: relative;
+    z-index: -1;
+
+}
+
+
+.image-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0.3;
+
+}
+
+.image-section::after :hover {
+    opacity: 0.1;
+}
+
+.image-section img {
+    width: 100%;
+}
+
+
+.sidebar-section {
+    background: #FEC1CB;
+    width: 100px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    margin: auto;
+}
+
+
+.social a {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-decoration: none;
+    color: gray;
+
+
+}
 
 
 /*-------Skills click Section------- */
@@ -931,7 +1153,7 @@ button:focus {
 }
 
 
-.text-section {
+.text-section-contact {
     width: 70%;
     align-content: center;
     margin: auto;
@@ -1019,7 +1241,7 @@ footer h4 {
 
 .inner-phone {
     position: absolute;
-    
+
 }
 
 
@@ -1055,7 +1277,7 @@ footer h4 {
     display: flex;
     flex-direction: column;
     height: 100%;
-   
+
 }
 
 .message {
@@ -1102,7 +1324,7 @@ footer h4 {
 
 .mine {
     align-items: flex-end;
-   
+
 }
 
 .mine .message {
@@ -1164,24 +1386,26 @@ footer h4 {
     left: 0;
     display: none;
     animation: fadeIn 2s ease-in;
-    
+
 }
 
 
 
 
 .messages:nth-of-type(1) {
- animation: fadeIn  4s ease-in;   
+    animation: fadeIn 4s ease-in;
 }
+
 .messages:nth-of-type(2) {
- animation: fadeIn  5s ease-in;   
+    animation: fadeIn 5s ease-in;
 }
+
 .messages:nth-of-type(3) {
- animation: fadeIn  6s ease-in;   
+    animation: fadeIn 6s ease-in;
 }
 
 .messages:nth-of-type(4) {
- animation: fadeIn  7s ease-in;   
+    animation: fadeIn 7s ease-in;
 }
 
 
@@ -1266,7 +1490,7 @@ footer h4 {
         font-size: 3rem;
     }
 
-    .card - {
+    .card p {
         font-size: 2rem;
     }
 
@@ -1373,8 +1597,8 @@ footer h4 {
     }
 
     ;
-    
-     #contact-click {
+
+    #contact-click {
         display: block;
     }
 
@@ -1439,6 +1663,7 @@ footer h4 {
 
     .cards-section {
         padding-top: 45px;
+        height: 105vh;
     }
 
     .cards-section .cards {
@@ -1560,6 +1785,10 @@ footer h4 {
         display: none;
     }
 
+    .prototyping {
+        display: none;
+    }
+
 
 }
 
@@ -1619,9 +1848,9 @@ footer h4 {
 
 
     }
-    
-    
-     #contact-click {
+
+
+    #contact-click {
         display: block;
     }
 
