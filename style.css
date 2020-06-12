@@ -618,7 +618,7 @@ nav a:hover {
     }
 
     50% {
-        font-size: 35px;
+        font-size: 45px;
         transform: translateX(-10px);
     }
 }
@@ -638,17 +638,15 @@ nav a:hover {
 }
 
 .text-section {
-    flex: 1.1;
+    flex: 1.2;
     background: #FDA500;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
 }
 
-.logo:hover {
-    animation: arrow 2s ease;
-}
+
+
 
 .text-section p {
     max-width: 400px;
@@ -659,10 +657,11 @@ nav a:hover {
 }
 
 .text-section h1 {
-    font-size: 80px;
+    font-size: 78px;
     width: 450px;
     margin-bottom: 50px;
     padding-top: 16px;
+     margin-left: 58px;
 }
 
 .details-btn {
@@ -674,6 +673,12 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.details-btn:hover{
+    width: 120px;
 }
 
 
@@ -683,8 +688,9 @@ nav a:hover {
     background: url("Media/proto.jpeg") no-repeat center center/cover;
     position: relative;
     z-index: -1;
-
 }
+
+
 
 
 .image-section::after {
@@ -722,11 +728,12 @@ nav a:hover {
 }
 
 
-.social a {
+.social span{
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-decoration: none;
     color: gray;
+    cursor: pointer;
 
 
 }
