@@ -1,0 +1,199 @@
+
+/*-------Skills click Section------- */
+
+.skills-click {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-click h3 {
+    margin-right: 15px;
+}
+
+.skills-click button {
+    font-size: 1.17em;
+    background-color: #F1CF4D;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s ease-in;
+
+}
+
+.skills-click button:hover {
+    background-color: #E34F67;
+    color: #fff;
+}
+
+button:focus {
+    outline: 0;
+}
+
+
+/*-------Skills Section------- */
+
+.skills {
+    height: 110vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    background-color: #FBB036;
+    padding: 10px 0;
+    display: none;
+}
+
+.skills.show {
+    display: flex;
+}
+
+
+.clip-card h3 i {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.clip-card p {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.clip-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 55px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+
+
+
+}
+
+.clip-card {
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin: 15px auto;
+    border-radius: 40px 40px 40px 40px;
+    min-width: 350px;
+    max-width: 560px;
+    background-color: #fff;
+    display: flex;
+
+}
+
+
+.clip-card .clip-header {
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: blue;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    clip-path: circle(40% at 0% 0%);
+    transition: all 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    border-radius: 40px 40px 40px 40px;
+
+
+}
+
+
+
+.clip-card-1 .clip-header {
+    background: #f4723a;
+
+
+}
+
+.clip-card-1:hover .clip-header {
+    background: #ff5959
+}
+
+.clip-card-2 .clip-header {
+    background: #23abef;
+}
+
+.clip-card-2:hover .clip-header {
+    background: #22d1ee;
+}
+
+.clip-card-3 .clip-header {
+    background: #ffd717;
+}
+
+.clip-card-3:hover .clip-header {
+    background: #5be7a9;
+}
+
+.clip-card-4 .clip-header {
+    background: #E34F67;
+}
+
+.clip-card-4:hover .clip-header {
+    background: #d91303;
+}
+
+
+.clip-card-5 .clip-header {
+    background: #83D0BB;
+}
+
+.clip-card-5:hover .clip-header {
+    background: #00d1ff;
+}
+
+.clip-card-6 .clip-header {
+    background: #805D9A;
+}
+
+.clip-card-6:hover .clip-header {
+    background: #ff1f5a;
+}
+
+
+
+
+
+.clip-card .clip-header p {
+    opacity: 0;
+    transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+}
+
+.clip-card:hover .clip-header {
+    clip-path: circle(100% at 60% 60%);
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.clip-card:hover .clip-header p {
+    opacity: 1;
+    height: 100%;
+
+}
+
+.clip-card .clip-header h3,
+.clip-card .clip-header h4 {
+    margin: 0 !important;
+    padding: 0;
+
+}
+

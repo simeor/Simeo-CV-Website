@@ -1,0 +1,114 @@
+/*-------Projects Section------- */
+
+.projects {
+    width: 100%;
+    height: 60vh;
+    background-color: #f5f7fa;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.project-cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: auto;
+    cursor: pointer;
+
+
+}
+
+.ui-card {
+    height: 40vh;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 10%;
+    box-shadow: 10px 5px 10px 5px #8888;
+    overflow: hidden;
+
+
+}
+
+
+.ui-card:hover > .img-container img {
+    opacity: 0.6;
+    transition: opacity 1s ease;
+}
+
+.ui-card:hover > #second i {
+    opacity: 1;
+    transition: opacity 1.5s ease;
+
+}
+
+
+.fa-html5 {
+    color: #f26524;
+
+}
+
+.fa-css3-alt {
+    color: #1890CF;
+}
+
+.fa-js-square {
+    color: #F1BF26;
+}
+
+.fa-react {
+    color: #15AABF;
+}
+
+.fa-gem {
+    color: #D91303;
+}
+
+.ui-card h2 {
+    width: 90%;
+    margin: auto;
+    margin-left: 10%;
+}
+
+#second {
+
+    margin-top: 0.4em;
+
+}
+
+#second i {
+    opacity: 0.6;
+
+}
+
+.img-container {
+
+    height: 76%;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+    border-radius: 40px;
+    position: relative;
+
+
+}
+
+
+.img-container img {
+    width: 120%;
+    height: 100%;
+}
+
+
+
+.bottom-section p {
+    margin-left: 6%;
+
+}

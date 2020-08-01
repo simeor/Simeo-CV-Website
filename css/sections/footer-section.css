@@ -1,0 +1,33 @@
+/*-------footer------- */
+
+
+
+footer {
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+
+}
+
+
+
+footer h4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 25px;
+    color: #969799;
+
+}
+
+

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('sections/header-section.css');
+@import url('sections/about-section.css');
+@import url('sections/more%20-about%20-me%20-section.css');
+@import url('sections/cards-section.css');
+@import url(sections/f-and-b-section.css);
+@import url(sections/prototype-section.css);
+@import url(sections/skills-section.css);
+@import url(sections/footer-section.css);
+@import url(sections/pop-up.css);
+@import url(sections/media-q.css);
+@import url(sections/projects-section.css);
+@import url(sections/contact-section.css);
+@import url(sections/main-project-section.css);
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica', Ariel, sans-serif;
+
+}
+
+body {
+    background-color: #fff;
+    overflow: none;
+    width: 100%;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+
+    list-style-type: none;
+}
+
+
+
+
+
+/*-------End of Site------- */
+
+
+
+
+
+
+/*-------CSS Animations------- */
+
+/* ----------------------------------------
+ * animation Pop in nad fade in
+ * ----------------------------------------
+ */
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.7);
+
+
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+
+
+
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+/* ----------------------------------------
+ * Higlight-in
+ * ----------------------------------------
+ */
+
+
+@keyframes higlight-in {
+    0% {
+        opacity: 0;
+        width: 0%;
+        border-radius: 40% 45% 40% 44%;
+    }
+
+    40% {
+        opacity: 1;
+        width: 100%;
+        border-radius: 5% 25% 20% 24%;
+
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*-------Grow Card------- */
+
+
+.grow:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s 0.1s ease-in-out;
+}

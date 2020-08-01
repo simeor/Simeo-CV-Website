@@ -1,0 +1,71 @@
+/*-------Main Project------- */
+
+.main-project {
+    height: 100vh;
+    width: 100%;
+    background-color: #f73e6f;
+    background-image: url("../../Media/Mataura.png");
+    background-size: cover;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 7px solid #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.main-project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f73e6f;
+    opacity: .9;
+    z-index: -1;
+}
+
+
+
+
+.main-project h1 {
+    font-size: 4rem;
+    margin-bottom: 5px;
+    margin-top: 10px;
+
+}
+
+
+.main-project li {
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.main-project h3 {
+    text-decoration: underline;
+
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+

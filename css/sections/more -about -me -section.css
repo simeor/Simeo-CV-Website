@@ -1,0 +1,136 @@
+/*-------More About Me Section------- */
+
+
+.more_about-me {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    background-color: #fff;
+}
+
+
+
+
+.more_about-me h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 4.2rem;
+    margin-bottom: 20px;
+
+}
+
+
+.more_about-me p {
+    width: 80%;
+    margin-right: 10px;
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: lowercase;
+
+
+}
+
+
+.highlight-container {
+    position: relative;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: lowercase;
+
+}
+
+
+.highlight::before {
+    content: ' ';
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgb(251, 176, 54, 0.4);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 5% 25% 20% 24%;
+    padding: 12px 3px 3px 8px;
+    animation: higlight-in 7s 1.5s ease-in-out infinite;
+}
+
+.highlight2::before {
+    content: ' ';
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: rgb(251, 176, 54, 0.4);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 5% 25% 20% 24%;
+    padding: 12px 3px 3px 8px;
+    animation: higlight-in 7s 1.9s ease-in-out infinite;
+}
+
+
+
+
+
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.about_me_img {
+    position: relative;
+
+}
+
+.sim_img {
+    width: 420px;
+
+}
+
+.light_img {
+    position: absolute;
+    top: -20px;
+    right: 60px;
+    width: 150px;
+    transform: rotate(19deg);
+    opacity: 0.8;
+
+}
+
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+/*------- F&B Section ------- */
+
+
+
+.fandb {
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.fandb h2 {
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+.vs-icon {
+    content: "";
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    color: #E66888;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 23px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 87vh;
+    padding: 10px;
+
+}
+
+.vs-icon img {
+    width: 110px;
+    height: 110px;
+}
+
+
+
+
+
+.box-item {
+    background: gray;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    padding: 3rem;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.front-end-box {
+    background-color: #37A5D9;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+}
+
+
+.back-end-box {
+    background-color: #83D0BB;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+
+}
+
+
+.skills-bullble li {
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 7px;
+    display: inline-block;
+    border: none;
+}
+
