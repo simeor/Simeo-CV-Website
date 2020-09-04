@@ -9,6 +9,9 @@
     background: #fff;
     overflow: hidden;
     position: relative;
+    background: url(../../Media/Mataura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 

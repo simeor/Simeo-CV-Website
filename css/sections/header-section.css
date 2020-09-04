@@ -14,7 +14,6 @@ svg {
     opacity: 0.9;
     bottom: 3px;
 
-
 }
 
 
@@ -58,6 +57,9 @@ header {
     background-color: #fbb034;
     animation: pop-in 2s ease-out forwards;
     position: relative;
+    background: url(../../Media/movingBack.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 }
