@@ -112,3 +112,14 @@
     margin-left: 6%;
 
 }
+
+
+
+@media(max-width: 500px){
+  .projects{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+
+  }
+}

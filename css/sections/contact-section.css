@@ -68,8 +68,6 @@
     justify-content: center;
     text-align: center;
     align-content: center;
-
-
 }
 
 
@@ -80,4 +78,18 @@
 .icon-circle i:hover {
     font-size: 34px;
 }
+
+
+@media(max-width: 500px){
+  .icon-container{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contact h2{
+    font-size: 20px;
+  }
+
+}
+
 

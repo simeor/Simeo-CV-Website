@@ -60,6 +60,13 @@
     margin-top: 50px;
 }
 
+@media(max-width: 500px){
+.main-project h1{
+  font-size: 2rem;
+}
+
+}
+
 
 
 
